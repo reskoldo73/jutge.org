@@ -19,37 +19,35 @@ using namespace std;
 
 using vi = vector<int>;
 
+//inefficient, high Halstead diff and high ccn
+
 const vi val = {50, 20, 10, 5, 2, 1};
-vi v(6);
+vi v;
 
 void print() {
-    bool first = true;
-    for(int i = 0; i < 6; ++i) {
-        int n = v[i];
-        while(n--) {
-            if(not first) cout << ' ';
-            first = false;
-            cout << val[i];            
-        }
-    }
+    for(int i = 0; i < (int)v.size(); ++i) cout << (i ? " " : "") << v[i];
     cout << "\n";
 }
 
 void solve(int pos, int n) {
     if(pos == 5) {
-        v[5] = n;
-        return print();
+        for(int i = 0; i < n; ++i) v.push_back(1);
+        print();
+        for(int i = 0; i < n; ++i) v.pop_back();
+        return;
     }
     int maxc = n / val[pos];
     for(int i = maxc; i >= 0; --i) {
-        v[pos] = i;
+        for(int k = 0; k < i; ++k) v.push_back(val[pos]);
         solve(pos+1, n - i*val[pos]);
+        for(int k = 0; k < i; ++k) v.pop_back();
     }
 }
 
 int main () {
     int n;
     while(cin >> n) {
+        v = vi();
         solve(0, n);
         cout << "\n";
     }
