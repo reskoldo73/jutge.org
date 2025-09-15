@@ -12,6 +12,7 @@ Print all the permutations with repetitions that can be made with s1, …, sn.
 Information about the checker
 You can print the solutions to this exercise in any order.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;

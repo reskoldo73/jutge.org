@@ -1,8 +1,3 @@
-// Zeros i uns (2)
-// https://jutge.org/problems/P45965_ca
-// P45965_ca:std:none:
-// Created on 9/6/2025, 2:14:27 AM by Luis de Carlos García
-
 /*
 Write a program to print all the combinations of n − o zeros and o ones, for some given n and o.
 

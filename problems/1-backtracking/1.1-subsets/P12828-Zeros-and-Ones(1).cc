@@ -1,4 +1,3 @@
-
 /*
 Write a backtracking program to print all the combinations of z zeros and o ones such that z + o = n, for a given n.
 

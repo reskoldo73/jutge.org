@@ -9,6 +9,7 @@ Output
 
 Print the words that can be made up with the 2n given letters, starting with a consonant and always alternating consonants and vowels. Print the words in alphabetical order, one per line.
 */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -9,6 +9,7 @@ Output
 
 Print the number of ways to put n queens on an n × n chessboard so that no queen threatens another queen.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;

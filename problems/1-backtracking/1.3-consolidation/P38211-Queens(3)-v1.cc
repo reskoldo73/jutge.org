@@ -9,6 +9,7 @@ Output
 
 Mark the queens with a ‘Q’, and the empty positions with a dot. Print the lexicographically smallest way (by rows, from top to bottom, and assuming that a ‘Q’ is smaller than a dot) to place n queens on an n × n chessboard so that no queen threatens another queen. If there is no solution, print “NO SOLUTION”.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -16,6 +16,7 @@ Print all the ways of placing n individuals in a row, one of each species, so th
 Information about the checker
 You can print the solutions to this exercise in any order.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;

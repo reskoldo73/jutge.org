@@ -12,6 +12,7 @@ Print all the ways to put n queens on an n × n chessboard so that no queen thre
 Information about the checker
 You can print the solutions to this exercise in any order.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -13,6 +13,7 @@ Observation
 
 A simple backtracking program that computes the result for every given n (even if repeated) is fast enough for this problem.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;
