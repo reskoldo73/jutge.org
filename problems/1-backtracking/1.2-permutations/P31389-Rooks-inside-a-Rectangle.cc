@@ -12,6 +12,7 @@ Print all the ways to place r rooks on the board so that no rook threatens anoth
 Information about the checker
 You can print the solutions to this exercise in any order.
 */
+
 #include <iostream>
 #include <vector>
 using namespace std;
