@@ -41,4 +41,4 @@
 *.dwo
 
 # input texts
-* .txt
+*.txt
