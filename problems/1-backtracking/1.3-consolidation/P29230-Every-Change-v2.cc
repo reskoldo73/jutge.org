@@ -20,7 +20,7 @@ using namespace std;
 
 using vi = vector<int>;
 
-//check high halstead diff
+//1.6 halstead diff
 
 const vi val = {50, 20, 10, 5, 2, 1};
 vi v(6);
