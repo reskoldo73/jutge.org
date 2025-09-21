@@ -22,14 +22,12 @@ using vb = vector<bool>;
 using vi = vector<int>;
 using vvi = vector<vi>;
 using vvb = vector<vb>;
-using vvvb = vector<vvb>;
-
-//not solved, copy of sudokus
+using pii = pair<int,int>;
 
 int n;
+pii p;
 vvi board;
-vvvb mini;
-vvb rows, cols;
+vvb rows, cols, mini;
 bool solved;
 
 int chartoint(char c) {
@@ -38,66 +36,117 @@ int chartoint(char c) {
 }
 
 bool check(int x, int y, int z) {
-    return rows[x][z] and cols[y][z] and mini[x/3][y/3][z];
+    return rows[x][z] and cols[y][z] and mini[(x/3)*3 + y/3][z];
 }
 
 void fix(int x, int y, int z, bool b) {
     rows[x][z] = b;
     cols[y][z] = b;
-    mini[x/3][y/3][z] = b;
+    mini[(x/3)*3 + y/3][z] = b;
+    board[x][y] = b ? 0 : z;
 }
 
 void print() {
-    cout << "\n";
     for(int i = 0; i < 9; ++i) {
+        if(i == 3 || i == 6) cout << "------+-------+------\n";
         for(int j = 0; j < 9; ++j) {
+            if(j == 3 || j == 6) cout << " |";
             cout << (j ? " " : "") << board[i][j];
         }
         cout << "\n";
     }
+    cout << "\n";
 }
 
-void solve(int pos) {
-    if (solved) return;
-    if(pos == 81){
-        solved = true;
-        return print();
-    }
-    int x = pos/9;
-    int y = pos%9;
-    if(board[x][y] == 0){
-        for(int i = 1; i < 10; ++i) {
-            if(check(x, y, i)) {
-                board[x][y] = i;
-                fix(x, y, i, false);
-                solve(pos+1);
-                fix(x, y, i, true);
-                board[x][y] = 0;
+pii find_min_options() {
+    pii best = {-1, -1};
+    int min_options = 10;
+    
+    for(int i = 0; i < 9; ++i) {
+        for(int j = 0; j < 9; ++j) {
+            if(board[i][j] == 0) {
+                int count = 0;
+                for(int num = 1; num < 10; ++num) {
+                    if(check(i, j, num)) ++count;
+                }
+                if(count < min_options) {
+                    min_options = count;
+                    best = {i, j};
+                }
+                if(min_options == 1) break;
             }
         }
+        if(min_options == 1) break;
     }
-    else solve(pos+1);
+    
+    return best;
+}
+
+bool is_solved() {
+    for(int i = 0; i < 9; ++i) {
+        for(int j = 0; j < 9; ++j) {
+            if(board[i][j] == 0) return false;
+        }
+    }
+    return true;
+}
+
+void solve() {
+    if(is_solved()) {
+        solved = true;
+        return;
+    }
+    
+    pii cell = find_min_options();
+    if(cell.first == -1) return; // No empty cells found
+    
+    int x = cell.first, y = cell.second;
+    
+    for(int num = 1; num <= 9; ++num) {
+        if(check(x, y, num)) {
+            fix(x, y, num, false);
+            solve();
+            if(solved) return;
+            fix(x, y, num, true);
+        }
+    }
 }
 
 void read() {
     board = vvi(9, vi(9, 0));
-    mini = vvvb(3, vvb(3, vb(10, true)));
-    rows = cols = vvb(9, vb(10, true));
+    rows = vvb(9, vb(10, true));
+    cols = vvb(9, vb(10, true));
+    mini = vvb(9, vb(10, true));
+    
     for(int i = 0; i < 9; ++i) {
+        if(i == 3 or i == 6) {
+            string trash;
+            cin >> trash;
+        }
         for(int j = 0; j < 9; ++j) {
             char aux;
+            if(j == 3 or j == 6) cin >> aux;
             cin >> aux;
             int temp = chartoint(aux);
-            board[i][j] = temp;
-            if(temp != 0) fix(i, j, temp, false);
+            if(temp != 0) {
+                board[i][j] = temp;
+                fix(i, j, temp, false);
+            }
         }
     }
     solved = false;
-    solve(0);
+    solve();
+    print();
 }
 
-int main () {
+void fast_io(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+}
+
+int main() {
+    fast_io();
     cin >> n;
-    cout << n << "\n";
     while(n--) read();
 }
