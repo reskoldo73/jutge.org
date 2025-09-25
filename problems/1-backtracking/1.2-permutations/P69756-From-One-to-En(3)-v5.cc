@@ -46,7 +46,7 @@ void solve(int pos) {
     for(int i = 0; i < n; ++i) {
         if(not used[i]) {
             int temp = inv;
-            inv += c;; 
+            inv += c; 
             used[i] = true; 
             v[pos] = i;
             solve(pos+1);
