@@ -16,6 +16,44 @@ Print the row and the column of the upper-left corner of the square that has the
 #include <vector>
 using namespace std;
 
+using vi = vector<int>;
+using vvi = vector<vi>;
+
+int w, h, c;
+vvi rect;
+
+void read() {
+    for(int i = 1; i <= h; ++i) {
+        for(int j = 1; j <= w; ++j) {
+            int& temp = rect[i][j];
+            cin >> temp;
+            temp += rect[i][j-1];
+            temp += rect[i-1][j];
+            temp -= rect[i-1][j-1];
+        }
+    }
+}
+
+void solve() {
+    int max = -1;
+    int x = 0, y = 0;
+    for(int i = 0; i <= h-c; ++i) {
+        for(int j = 0; j <= w-c; ++j) {
+            int temp = rect[i+c][j+c] + rect[i][j] - rect[i][j+c] - rect[i+c][j];
+            if(temp > max) {
+                max = temp;
+                x = i;
+                y = j;
+            }
+        }
+    }
+    cout << x << ' ' << y << endl;    
+}
+
 int main() {
 
+    cin >> w >> h >> c;
+    rect = vvi(h+1, vi(w+1, 0));
+    read();
+    solve();
 }
