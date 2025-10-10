@@ -17,6 +17,29 @@ using namespace std;
 using vi = vector<int>;
 using vii = vector<vi>;
 
+string s;
+int n;
+vi memo;
+
+int solve(int pos) {
+    if(memo[pos] != -1) return memo[pos];
+    memo[pos] = 0;
+    for(int i = 0; i < pos; ++i) {
+        if(s[i] < s[pos]) memo[pos] += 1 + solve(i);
+    }
+    return memo[pos];
+}
+
+
 int main () {
-    
+    while(cin >> s) {
+        n = s.size();
+        memo = vi(n, -1);
+        memo[0] = 0;
+        int ans = 0;
+        for(int i = 1; i < n; ++i) {
+            ans += solve(i);
+        }
+        cout << ans << "\n";
+    }
 }

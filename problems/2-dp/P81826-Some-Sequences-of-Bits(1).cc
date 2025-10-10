@@ -19,32 +19,33 @@ using namespace std;
 
 using ll = long long;
 using vll = vector<ll>;
-using vi = vector<int>;
-using vb = vector<bool>;
+using vvll = vector<vll>;
+using vvvll = vector<vvll>;
 
-//incredibly wrong
-//think that if a n sequence can split, both n+1 sequences can't
-//and that a n sequence can split iff it ends with 01
+//revise, high ccn
 
-vi prime;
-vb erat;
-vll ans;
+const int maxn = 150;
+vvvll memo;
 
 
-ll solve(int n) {
-    if(ans[n] == -1) return ans[n] = solve(n-1) + prime[(n-1)/2];
-    else return ans[n];
+ll solve(int n, int i, int j) {
+    if(n < 2) return n+1;
+    if(memo[n][i][j] != 0) return memo[n][i][j];
+    if(i == 0) {
+        if(j == 0) memo[n][0][0] = solve(n, 0, 1) + solve(n, 1, 0) + solve(n, 1, 1);
+        else memo[n][0][1] = solve(n-1, 1, 0);
+    }
+    else {
+        if(j == 0) memo[n][1][0] = solve(n-1, 0, 1) + solve(n-1, 1, 1);
+        else memo[n][1][1] = solve(n-1, 0, 1);
+    }
+    return memo[n][i][j];
 }
 
 int main() {
-    prime = vi();
-    erat = vb(400, true);
-    for(int i = 2; i < 400; ++i) {
-        if(erat[i]) for(int j = 2; j*i < 400; ++j) erat[j*i] = false;
-    }
-    for(int i = 0; i < 400; ++i) if(erat[i]) prime.push_back(i);
-    ans = vll(150+1, -1);
-    for(int i = 0; i < 3; ++i) ans[i] = i+1;
+    memo = vvvll(maxn + 1, vvll(2, vll(2, 0)));
+    memo[2][0][1] = memo[2][1][0] = memo[2][1][1] = 1;
+    memo[2][0][0] = memo[2][0][1] + memo[2][1][0] + memo[2][1][1];
     int n;
-    while(cin >> n) cout << solve(n) << endl;
+    while(cin >> n) cout << solve(n, 0, 0) << endl;
 }
