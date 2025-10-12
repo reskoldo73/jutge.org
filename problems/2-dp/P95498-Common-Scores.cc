@@ -17,8 +17,28 @@ For every case, print the length of the longest common subsequence.
 using namespace std;
 
 using vi = vector<int>;
-using vii = vector<vi>;
+using vvi = vector<vi>;
+
+vi a, b;
+vvi memo;
+
+int solve(int i, int j) {
+    if(i < 0 or j < 0) return 0;
+    if(memo[i][j] != -1)
+        return memo[i][j];
+    if(a[i] == b[j]) 
+        return memo[i][j] = 1 + solve(i-1, j-1);
+    return memo[i][j] = max(solve(i-1, j), solve(i, j-1));
+}
 
 int main () {
-    
+    int m, n;
+    while(cin >> m >> n) {
+        a = vi(m);
+        b = vi(n);
+        for(int &x : a) cin >> x;
+        for(int &x : b) cin >> x;
+        memo = vvi(m, vi(n, -1));
+        cout << solve(m-1, n-1) << "\n";
+    }
 }
