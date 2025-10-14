@@ -21,25 +21,32 @@ using namespace std;
 
 using vb = vector<bool>;
 using vvb = vector<vb>;
+using vi = vector<int>;
+using vvi = vector<vi>;
 
 const int maxans = 1e6;
 
+vvi memo;
 vvb maze;
 bool pass;
 int ans;
 
-void solve(int i, int j) {
+int solve(int i, int j) {
     if(ans >= maxans) pass = true;
-    if(i < 0 or j < 0 or pass or maze[i][j]) return;
-    if(i == 0 and j == 0) ++ans;
-    solve(i-1, j);
-    solve(i, j-1);
+    if(i < 0 or j < 0 or pass or maze[i][j]) return 0;
+    if(memo[i][j] != -1) {
+        ans += memo[i][j];
+        return ans;
+    }
+    memo[i][j] = solve(i-1, j) + solve(i, j-1);
+    ans += memo[i][j];
+    return ans;
 }
 
 int main () {
     int n, m;
     while(cin >> n >> m and (m != 0 or n != 0)) {
-        maze = vvb(n, vb(m, 0));
+        maze = vvb(n, vb(m, false));
         for(int i = 0; i < n; ++i) {
             for(int j = 0; j < m; ++j) {
                 char temp;
@@ -49,7 +56,9 @@ int main () {
         }
         pass = false;
         ans = 0;
-        solve(n-1, m-1);
+        memo = vvi(n, vi(m, -1));
+        memo[0][0] = 1;
+        ans = solve(n-1, m-1);
         if(pass) cout << "!!!\n";
         else cout << ans << "\n";
 

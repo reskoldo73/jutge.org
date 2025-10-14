@@ -42,3 +42,6 @@
 
 # input texts
 *.txt
+
+# pdf files
+*.pdf
