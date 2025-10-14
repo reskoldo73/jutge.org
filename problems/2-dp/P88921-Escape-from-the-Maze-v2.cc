@@ -33,14 +33,16 @@ int ans;
 
 int solve(int i, int j) {
     if(ans >= maxans) pass = true;
-    if(i < 0 or j < 0 or pass or maze[i][j]) return 0;
+    if(pass or i < 0 or j < 0 or maze[i][j]) return 0;
     if(memo[i][j] != -1) {
-        ans += memo[i][j];
+        ans = memo[i][j];
+        if(ans>=maxans) pass = true;
         return ans;
     }
     memo[i][j] = solve(i-1, j) + solve(i, j-1);
-    ans += memo[i][j];
-    return ans;
+    ans = memo[i][j];
+    if(ans>=maxans) pass = true;
+    return memo[i][j];
 }
 
 int main () {

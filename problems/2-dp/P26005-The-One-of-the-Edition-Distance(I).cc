@@ -15,8 +15,25 @@ For every case, print the minimum cost to make w1 and w2 identical.
 using namespace std;
 
 using vi = vector<int>;
-using vii = vector<vi>;
+using vvi = vector<vi>;
+
+vi costs;
+vvi memo;
+string s, t;
+
+int solve(int i, int j) {
+    if(memo[i][j] != -1) return memo[i][j];
+    
+}
 
 int main () {
-    
+    costs = vi(26, 0);
+    int n;
+    while(cin >> n) {
+        for(int i = 0; i < n; ++i) cin >> costs[i];
+        cin >> s >> t;
+        int size = s.size();
+        cout << solve(size-1, size-1);
+
+    }
 }
