@@ -22,9 +22,16 @@ vvi memo;
 string s, t;
 
 int solve(int i, int j) {
+    if(i < 0 and j < 0) return 0;
+    if(i < 0) return costs[t[j]-'a'] + solve(i, j-1);
+    if(j < 0) return costs[s[i]-'a'] + solve(i-1, j);
+
     if(memo[i][j] != -1) return memo[i][j];
+    if(s[i] == t[j]) return memo[i][j] = solve(i-1, j-1);
     
-}
+    return memo[i][j] = min(costs[s[i]-'a'] + solve(i-1, j), costs[t[j]-'a'] + solve(i, j-1));
+    
+} 
 
 int main () {
     costs = vi(26, 0);
@@ -32,8 +39,9 @@ int main () {
     while(cin >> n) {
         for(int i = 0; i < n; ++i) cin >> costs[i];
         cin >> s >> t;
-        int size = s.size();
-        cout << solve(size-1, size-1);
-
+        int ssize = s.size();
+        int tsize = t.size();
+        memo = vvi(ssize, vi(tsize, -1));
+        cout << solve(ssize-1, tsize-1) << "\n";
     }
 }
