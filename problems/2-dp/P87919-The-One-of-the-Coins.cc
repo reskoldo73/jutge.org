@@ -1,65 +1,63 @@
-/*
-Perhaps you have read that some problems are so classic that they barely need a statement. For this one, given a collection of n coins with different values and a target amount A, we ask you to indicate the way to add up to A by using coins of the largest possible values. In particular, a way is better than another one if the former uses more coins of the largest value; in the event of a tie, if it uses more coins of the second largest value, etc.
-
-Input
-
-Input consists of several cases. Each case begins with the number of coins n between 1 and ‍100, followed by n different integer numbers v1, …, vn, where 1≤ vi≤ 10000. Finally, we have an integer number 1≤ A≤ 100000.
-
-Output
-
-For every case, print in non-increasing order the necessary coins to get A, choosing the combination with coins of largest value in case of a tie. If there is no solution, print −1.
-*/
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 
-using vi = vector<int>;
+vector<int> v;
+vector<vector<int>> dp;
+vector<bool> done;
 
-int n, A;
-vi val;
+vector<int> f(int A) {
+    if (A == 0) return vector<int>(0);    // valid: empty combination
+    if (A < 0) return vector<int>(1, -1); // invalid marker
+    if (done[A]) return dp[A];
 
-int main () {
-    while(cin >> n) {
-        val = vi(n);
-        for(int &x : val) cin >> x;
-        cin >> A;
-        sort(val.begin(), val.end());
-        vi ans(A+1, -1);
-        
-        // Initialize amount 0 as reachable (use 0 as marker)
-        ans[0] = 0;
-        
-        int maxcoin = 0;
-        for(int i = val[0]; i <= A; ++i) {
-            if(maxcoin < n && i == val[maxcoin]) {
-                ans[i] = val[maxcoin];
-                if(maxcoin < n-1) ++maxcoin;  // Fixed bounds check
-            }
-            else {
-                for(int j = maxcoin; j >= 0; --j) {
-                    if(i >= val[j] && ans[i - val[j]] != -1) {  // Check for any reachable
-                        ans[i] = val[j];
-                        j = -1;
-                    }
-                }
-            }
-        }
+    done[A] = true;
 
-        if(ans[A] == -1) {
-            cout << -1 << endl;
-        }
-        else {
-            bool first = true;
-            while(A > 0) {
-                if(not first) cout << ' ';
-                else first = false;
-                cout << ans[A];
-                A -= ans[A];
+    int n = v.size();
+    for (int i = 0; i < n; ++i) {
+        if (A >= v[i]) {
+            vector<int> t = f(A - v[i]);
+
+            // t == {-1} means impossible; anything else is valid (including empty)
+            if (!(t.size() == 1 && t[0] == -1)) {
+                // build result r = [v[i]] + t (without using insert)
+                vector<int> r;
+                r.push_back(v[i]);
+                for (int j = 0; j < (int)t.size(); ++j) r.push_back(t[j]);
+                dp[A] = r;
+                return dp[A]; // first valid found -> lexicographically best
             }
-            cout << endl;
         }
     }
+
+    dp[A] = vector<int>(1, -1);
+    return dp[A];
+}
+
+int main() {
+    int n;
+    while (cin >> n) {
+        v = vector<int>(n);
+        for (int i = 0; i < n; ++i) cin >> v[i];
+        int A;
+        cin >> A;
+
+        sort(v.rbegin(), v.rend()); // largest first
+
+        dp = vector<vector<int>>(A + 1);
+        done = vector<bool>(A + 1, false);
+
+        vector<int> ans = f(A);
+
+        if (ans.size() == 1 && ans[0] == -1) cout << -1 << "\n";
+        else {
+            for (int i = 0; i < (int)ans.size(); ++i) {
+                if (i > 0) cout << " ";
+                cout << ans[i];
+            }
+            cout << "\n";
+        }
+    }
+    return 0;
 }
