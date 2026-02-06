@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Learning-yellow.svg?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Platform-Jutge.org-orange.svg?style=for-the-badge)
 
-Welcome! This repository contains problems and notes from **[Jutge.org](https://jutge.org)**.
+Welcome! This repository contains problems and notes from **[Jutge.org](https://jutge.org)** courses from the UPC.
 
 > **Note:** These are just my messy codes (and maybe some from my friends). I am not a professional; I created this repository mainly to **practice using Git and GitHub**. The solutions work, but they might not always be the most optimized. Use them as a reference!
 
