@@ -2,11 +2,11 @@
 
 ## Use of STL data structures
 - [P50709 - Collection of numbers]
-- [P40902 - Casino](../src/P40902_en_Casino.cc)
-- [P69781 - Collatz pseudo-sequences (2)](../src/P69781_en_Collatz_Pseudo-Sequence_2.cc)
+- [P40902 - Casino](../../src/P40902_en_Casino.cc)
+- [P69781 - Collatz pseudo-sequences (2)](../../src/P69781_en_Collatz_Pseudo-Sequence_2.cc)
 - [P84415 - Bag of words]
 - [P37064 - Dynamic median]
-- [P59282 - Statistical measures](../src/P59282_en_Statistical_measures.cc)
+- [P59282 - Statistical measures](../../src/P59282_en_Statistical_measures.cc)
 - [P69932 - The longest sequence]
 - [P60296 - Role classification]
 - [P60219 - Easy game?]

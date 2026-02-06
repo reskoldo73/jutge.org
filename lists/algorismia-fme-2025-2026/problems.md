@@ -131,7 +131,7 @@
 ---
 
 ## Sets and maps
-- [P40902 - Casino](../src/P40902_en_Casino.cc)
+- [P40902 - Casino](../../src/P40902_en_Casino.cc)
 - [P69781 - Collatz pseudo-sequences (2)]
 - [P60219 - Easy game?]
 - [P37064 - Dynamic median]
