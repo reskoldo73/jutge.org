@@ -17,14 +17,14 @@
 ---
 
 ## Backtracking - Permutations
-- [P69348 - From one to en (1)]
-- [P24674 - Permutations of words]
-- [P12603 - Permutations with repetition]
-- [P31389 - Rooks inside a rectangle]
-- [P49889 - Consonants and vowels]
-- [P37197 - Incompatible species]
-- [P53046 - From one to en (2)]
-- [P69756 - From one to en (3)]
+- [P69348 - From one to en (1)](../../src/P69348_en_From_one_to_en_1.cc)
+- [P24674 - Permutations of words](../../src/P24674_en_Permutations_of_words.cc)
+- [P12603 - Permutations with repetition](../../src/P12603_en_Permutations_with_repetition.cc)
+- [P31389 - Rooks inside a rectangle](../../src/P31389_en_Rooks_inside_a_rectangle.cc)
+- [P49889 - Consonants and vowels](../../src/P49889_en_Consonants_and_vowels.cc)
+- [P37197 - Incompatible species](../../src/P37197_en_Incompatible_species.cc)
+- [P53046 - From one to en (2)](../../src/P53046_en_From_one_to_en_2-v3.cc)
+- [P69756 - From one to en (3)](../../src/P69756_en_From_one_to_en_3-v5.cc)
 
 ---
 
