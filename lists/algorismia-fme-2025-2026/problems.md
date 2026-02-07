@@ -81,16 +81,16 @@
 ## Piles, cues i cues de prioritats
 
 ### Piles
-- [P69643 - Checking parenthesis]
-- [P62390 - Simulating recursion (1)]
-- [P34441 - Simulating recursion (2)]
+- [P69643 - Checking parenthesis](../../src/P69643_en_Checking_parenthesis.cc)
+- [P62390 - Simulating recursion (1)](../../src/P62390_en_Simulating_recursion_1.cc)
+- [P34441 - Simulating recursion (2)](../../src/P34441_en_Simulating_recursion_2.cc)
 
 ### Cues
-- [P69217 - Radix sort]
+- [P69217 - Radix sort](../../src/P69217_en_Radix_sort.cc)
 
 ### Cues de prioritats
-- [P40558 - Sorting with priority queues]
-- [P59282 - Statistical measures]
+- [P40558 - Sorting with priority queues](../../src/P40558_en_Sorting_with_priority_queues.cc)
+- [P59282 - Statistical measures](../../src/P59282_en_Statistical_measures.cc)
 - [P62266 - Huffman codes]
 
 ---
