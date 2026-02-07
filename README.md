@@ -79,6 +79,14 @@ If you want to run these codes on your local machine:
     ```bash
     g++ -Wall -Wextra -Wpedantic -O2 src/P12345_ProblemName.cc
     ./a.out <in.txt >out.txt
+    or
+    ./a.out <sample.inp >sample.out
+    ```
+3. **Compare outputs**:
+    ```bash
+    diff out.txt expected.txt
+    or
+    diff sample.out sample.cor
     ```
 
 ---
