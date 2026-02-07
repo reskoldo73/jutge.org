@@ -29,20 +29,20 @@
 ---
 
 ## Backtracking - Consolidation
-- [P16415 - Queens (1)]
-- [P17921 - Queens (2)]
-- [P38211 - Queens (3)]
-- [P76807 - Sudoku]
-- [P79494 - Més Sudokus]
-- [P42568 - Printing cool words]
-- [P29230 - Every change]
-- [P17598 - Balance (2)]
-- [P22295 - The travelling tortoise]
-- [P71701 - Peaceful kings]
-- [P52363 - Jaher's suitcase]
-- [P78955 - Even more Sudokus]
-- [P74548 - Sebastian's toy-friends]
-- [P50084 - Numerology]
+- [P16415 - Queens (1)](../../src/P16415_en_Queens_1-v2.cc)
+- [P17921 - Queens (2)](../../src/P17921_en_Queens_2-v2.cc)
+- [P38211 - Queens (3)](../../src/P38211_en_Queens_3-v2.cc)
+- [P76807 - Sudoku](../../src/P76807_en_Sudoku-v2.cc)
+- [P79494 - More Sudokus](../../src/P79494_en_More_Sudokus.cc)
+- [P42568 - Printing cool words](../../src/P42568_en_Printing_cool_words.cc)
+- [P29230 - Every change](../../src/P29230_en_Every_change-v2.cc)
+- [P17598 - Balance (2)](../../src/P17598_en_Balance_2.cc)
+- [P22295 - The travelling tortoise](../../src/P22295_en_The_travelling_tortoise.cc)
+- [P71701 - Peaceful kings](../../src/P71701_en_Peaceful_kings-v1.cc)
+- [P52363 - Jaher's suitcase](../../src/P52363_en_Jahers_suitcase.cc)
+- [P78955 - Even more Sudokus](../../src/P78955_en_Even_more_Sudokus.cc)
+- [P74548 - Sebastian's toy-friends](../../src/P74548_en_Sebastians_toy_friends.cc)
+- [P50084 - Numerology](../../src/P50084_en_Numerology.cc)
 
 --- 
 
