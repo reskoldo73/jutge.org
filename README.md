@@ -35,15 +35,35 @@ To avoid duplication, this repository uses a **"Single Source"** structure:
 ...
 ```
 
+## Format:
+
+    ProblemNumber_language_Title-version.cc
+
+Example:
+
+    P14098_en_Multisets_4-v3.cc
+
+Title:  Multisets 4
+
+Problem Number: P14098
+
+Version: 3
+
+Language: English
+    
+
+
+
+
 ## Course Navigation
 
 Click on the links below to view the specific problem list for each course:
 
 | Course | Subject | Year/Semester | List |
 | :--- | :--- | :---: | :--- |
-| **PRO1** | Programming 1 | 2024-2025 Q1 | [📄 View Problems](./lists/pro1_2024_2025.md) |
-| **Algorismia** | Algorithmics | 2025 | [📄 View Problems](./lists/algorismia_2025.md) |
-| **EDA** | Data Structures | 2025-2026 Q2 | [📄 View Problems](./lists/eda_2025_2026.md) |
+| **PRO1** | Programació 1-FIB | 2024-2025 Q1 | [📄 View Problems](./lists/pro1-fib-2024-2025-q1/) |
+| **ALGO** | Algorismia-FME | 2025-2026 | [📄 View Problems](./lists/algorismia-fme-2025-2026/) |
+| **EDA** | Estructures de Dades i Algorismes-FIB | 2025-2026 Q2 | [📄 View Problems](./lists/eda-fib-q2-2025-2026/) |
 
 ---
 
