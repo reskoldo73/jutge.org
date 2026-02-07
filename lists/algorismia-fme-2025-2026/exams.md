@@ -3,8 +3,8 @@
 ## 2010
 
 ### Parcial
-- [P71701 - Peaceful kings]
-- [P42568 - Printing cool words]
+- [P71701 - Peaceful kings](../../src/P71701_en_Peaceful_kings-v1.cc)
+- [P42568 - Printing cool words](../../src/P42568_en_Printing_cool_words.cc)
 - [P18760 - Escape from the board]
 - [P67933 - Counting cool words]
 
@@ -75,7 +75,7 @@
 ### Final
 - [P63648 - Turning off lights]
 - [P74317 - Horizontal puzzle]
-- [P69781 - Collatz pseudo-sequences (2)]
+- [P69781 - Collatz pseudo-sequences (2)](../../src/P69781_en_Collatz_pseudosequence_2.cc)
 - [P29033 - Two colors]
 
 ### Recuperació
@@ -115,7 +115,7 @@
 - [P24879 - Minimum cost to make two words equal]
 
 ### Final
-- [P74548 - Sebastian's toy-friends]
+- [P74548 - Sebastian's toy-friends](../../src/P74548_en_Sebastians_toy_friends.cc)
 - [P36784 - L'agenda del gran Cthulhu]
 - [P11840 - Amistat a la xarxa]
 - [P24777 - Un altre joc del Nim]
@@ -257,19 +257,19 @@
 
 ---
 
-## 2022
+## 2022 
 
 ### Parcial
 - [P57091 - Concatenació més petita alfabèticament]
-- [P35368 - Més camins en un tauler (1)]
+- [P35368 - Més camins en un tauler (1)](../../src/P35368_ca_Mes_camins_en_un_tauler_1.cc)
 - [P43543 - Vacances organitzades]
-- [P81810 - Més camins en un tauler (2)]
+- [P81810 - Més camins en un tauler (2)](../../src/P81810_ca_Mes_camins_en_un_tauler_2.cc)
 
 ### Final
 - [P46370 - SEND + MORE = MONEY]
-- [P89531 - No ABBA]
-- [P24562 - Màxim nombre de vèrtexs vermells]
-- [P77184 - Distopia]
+- [P89531 - No ABBA](../../src/P89531_ca_No_ABBA.cc)
+- [P24562 - Màxim nombre de vèrtexs vermells](../../src/P24562_ca_Maxim_nombre_de_vertexs_vermells.cc)
+- [P77184 - Distopia](../../src/P77184_ca_Distopia.cc)
 
 ### Recuperació
 - [P13272 - Tots els palíndroms]
@@ -304,7 +304,7 @@
 ## 2024
 
 ### Parcial
-- [P57638 - Experiment físic (1)]
+- [P57638 - Experiment físic (1)](../../src/P57638_ca_Experiment_fisic_1.cc)
 - [P73252 - Antiga Roma (1)]
 - [P23914 - Experiment físic (2)]
 - [P79161 - Antiga Roma (2)]

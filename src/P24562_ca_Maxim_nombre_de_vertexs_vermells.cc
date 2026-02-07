@@ -17,6 +17,8 @@ Per a cada cas, si el graf es pot pintar amb els dos colors, escriviu “yes”
 seguit del màxim nombre possible de vèrtexs vermells. Altrament, escriviu “no”.
 */
 
+//reskoldo73, 2026-01-10
+
 #include <iostream>
 #include <vector>
 

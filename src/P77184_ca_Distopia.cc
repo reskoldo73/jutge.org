@@ -26,6 +26,8 @@ Per a cada cas, escriviu la suma mínima possible dels costs de totes les
 cerimònies.
 */
 
+//reskoldo73, 2026-01-10
+
 #include <iostream>
 #include <queue>
 

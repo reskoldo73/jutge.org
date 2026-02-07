@@ -22,6 +22,8 @@ La solució esperada és una programació dinàmica amb 4n estats, on n és la m
 de la paraula donada.
 */
 
+//reskoldo73, 2026-01-10
+
 #include <iostream>
 #include <vector>
 
