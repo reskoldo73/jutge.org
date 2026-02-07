@@ -1,5 +1,6 @@
 /*
-Write a program that, given n different words s1, …, sn, prints all the permutations with repetitions that can be made with the words.
+Write a program that, given n different words s1, …, sn, prints all the
+permutations with repetitions that can be made with the words.
 
 Input
 
@@ -9,9 +10,11 @@ Output
 
 Print all the permutations with repetitions that can be made with s1, …, sn.
 
-Information about the checker
-You can print the solutions to this exercise in any order.
+Information about the checker You can print the solutions to this exercise in
+any order.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>

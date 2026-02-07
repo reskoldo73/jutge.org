@@ -13,6 +13,8 @@ Information about the checker
 You can print the solutions to this exercise in any order.
 */
 
+//reskoldo73, 2025-09-15
+
 #include <iostream>
 #include <vector>
 using namespace std;
