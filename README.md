@@ -63,7 +63,7 @@ Click on the links below to view the specific problem list for each course:
 | :--- | :--- | :---: | :--- |
 | **PRO1** | Programació 1-FIB | 2024-2025 Q1 | [📄 View Problems](./lists/pro1-fib-2024-2025-q1/) |
 | **ALGO** | Algorismia-FME | 2025-2026 | [📄 View Problems](./lists/algorismia-fme-2025-2026/) |
-| **EDA** | Estructures de Dades i Algorismes-FIB | 2025-2026 Q2 | [📄 View Problems](./lists/eda-fib-q2-2025-2026/) |
+| **EDA** | Estructures de Dades i Algorismes-FIB | 2025-2026 Q2 | [📄 View Problems](./lists/eda-fib-2025-2026-q2/) |
 
 ---
 
