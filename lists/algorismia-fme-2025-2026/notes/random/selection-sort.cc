@@ -18,7 +18,7 @@ void swap(int i, int j) {
 Comparations: (n-1)*n/2 = O(n²)
 Swaps: n-1 = O(n)
 
-Better than inversion when dealing with hard to swap elements
+Better than insertion when dealing with hard to swap elements
 */
 void sel_sort() {
     for(int i = 0; i < n; ++i) {
