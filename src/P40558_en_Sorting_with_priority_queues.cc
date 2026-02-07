@@ -1,5 +1,6 @@
 /*
-Use priority queues to sort a sequence of integer numbers, in nondecreasing order and also in nonincreasing order.
+Use priority queues to sort a sequence of integer numbers, in nondecreasing
+order and also in nonincreasing order.
 
 Input
 
@@ -7,12 +8,16 @@ Input consists of a sequence of integer numbers.
 
 Output
 
-Print two lines, the first one with the numbers in increasing order, and the second one with the numbers in decreasing order.
+Print two lines, the first one with the numbers in increasing order, and the
+second one with the numbers in decreasing order.
 
 Observation
 
-To solve this exercise, the only containers that you should use are priority queues of integer numbers.
+To solve this exercise, the only containers that you should use are priority
+queues of integer numbers.
 */
+
+//reskoldo73, 2025-11-14
 
 #include <iostream>
 #include <queue>

@@ -1,5 +1,6 @@
 /*
-Write a program that checks the correct parenthesization of several given words by using a stack of characters.
+Write a program that checks the correct parenthesization of several given words
+by using a stack of characters.
 
 Input
 
@@ -7,8 +8,11 @@ Input consists of several non-empty words made up only of ‘(’, ‘)’, ‘[
 
 Output
 
-For every word, tell if it is correct or not, following the format of the example.
+For every word, tell if it is correct or not, following the format of the
+example.
 */
+
+//reskoldo73, 2025-11-14
 
 //1.4 ccn ratio
 

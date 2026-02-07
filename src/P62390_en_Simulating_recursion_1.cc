@@ -16,9 +16,11 @@ In C++, consider this program (whose inclusions have been removed):
             cout << endl;
         }
     }
-Take a look at the sample input and sample output to see what this program prints for every given number.
+Take a look at the sample input and sample output to see what this program
+prints for every given number.
 
-Without modifying @main()@, reimplement the procedure @work(n)@ with no calls at all, recursive or not, so that the output of the program does not change.
+Without modifying @main()@, reimplement the procedure @work(n)@ with no calls at
+all, recursive or not, so that the output of the program does not change.
 
 Input
 
@@ -26,12 +28,15 @@ Input consists of several strictly positive natural numbers.
 
 Output
 
-For every number, print a line identical to the one written by the program above.
+For every number, print a line identical to the one written by the program
+above.
 
 Observation
 
 To solve this exercise, the only containers that you should use are stacks.
 */
+
+//reskoldo73, 2025-11-13
 
 #include <iostream>
 #include <stack>
