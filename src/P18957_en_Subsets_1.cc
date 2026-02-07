@@ -1,5 +1,6 @@
 /*
-Write a program that, given n different words s1, …, sn, prints all the subsets that can be made up with the words.
+Write a program that, given n different words s1, …, sn, prints all the subsets
+that can be made up with the words.
 
 Input
 
@@ -9,9 +10,11 @@ Output
 
 Print all the subsets that can be made up with s1, …, sn.
 
-Information about the checker
-You can print in any order both the solutions and the elements inside each solution.
+Information about the checker You can print in any order both the solutions and
+the elements inside each solution.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>

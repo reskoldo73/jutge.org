@@ -1,5 +1,6 @@
 /*
-Write a program that, given two numbers n and t, prints all the multisets with t ‍numbers that can be made up with {1, …, n}.
+Write a program that, given two numbers n and t, prints all the multisets with
+t ‍numbers that can be made up with {1, …, n}.
 
 Input
 
@@ -7,11 +8,14 @@ Input consists of a natural number n > 0, followed by a natural number t ≥ 0.
 
 Output
 
-Print all the multisets of size t that can be made up with {1, …, n}. The numbers inside each multiset must appear in non-decreasing order.
+Print all the multisets of size t that can be made up with {1, …, n}. The
+numbers inside each multiset must appear in non-decreasing order.
 
-Information about the checker
-You can print the solutions to this exercise in any order.
+Information about the checker You can print the solutions to this exercise in
+any order.
 */
+
+//reskoldo73, 2025-09-16
 
 #include <iostream>
 #include <vector>

@@ -1,5 +1,6 @@
 /*
-Write a program to print all the combinations of n − o zeros and o ones, for some given n and o.
+Write a program to print all the combinations of n − o zeros and o ones, for
+some given n and o.
 
 Input
 
@@ -7,8 +8,11 @@ Input consists of n and o, two natural numbers such that n > 0 and 0 ≤ o ≤ n
 
 Output
 
-Print all the combinations of n − o zeros and o ones, one per line and in lexicographical order.
+Print all the combinations of n − o zeros and o ones, one per line and in
+lexicographical order.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>

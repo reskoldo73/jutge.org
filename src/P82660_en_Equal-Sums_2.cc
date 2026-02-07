@@ -1,18 +1,25 @@
 /*
-Write a program that, given an integer number s and n integer numbers x1, …, xn, prints the subset (maybe with repeated numbers, but using every xi at most once) lexicographically largest among those whose sum is s.
+Write a program that, given an integer number s and n integer numbers x1, …, xn,
+prints the subset (maybe with repeated numbers, but using every xi at most once)
+lexicographically largest among those whose sum is s.
 
 Input
 
-Input consists of an integer number s, followed by a number n > 0, followed by x1, …, xn.
+Input consists of an integer number s, followed by a number n > 0, followed by
+x1, …, xn.
 
 Output
 
-Print, with the elements sorted non-increasingly, the subset that is greatest in lexicographical order among those that can be made up with x1, …, xn and whose sum is s. If there is none, print “no solution”.
+Print, with the elements sorted non-increasingly, the subset that is greatest in
+lexicographical order among those that can be made up with x1, …, xn and whose
+sum is s. If there is none, print “no solution”.
 
 Hint
 
 Sort the given numbers.
 */
+
+//reskoldo73, 2025-09-16
 
 #include <iostream>
 #include <vector>

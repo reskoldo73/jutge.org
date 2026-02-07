@@ -1,17 +1,21 @@
 /*
-Write a program that, given a natural number m and n different words s1, …, sn, prints all the subsets of m elements that can be made up with the words.
+Write a program that, given a natural number m and n different words s1, …, sn,
+prints all the subsets of m elements that can be made up with the words.
 
 Input
 
-Input consists of two natural numbers m and n, followed by s1, …, sn. Assume n > 0 and 0 ≤ m ≤ n.
+Input consists of two natural numbers m and n, followed by s1, …, sn. Assume
+n > 0 and 0 ≤ m ≤ n.
 
 Output
 
 Print all the subsets of m words that can be made up with s1, …, sn.
 
-Information about the checker
-You can print in any order both the solutions and the elements inside each solution.
+Information about the checker You can print in any order both the solutions and
+the elements inside each solution.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>
