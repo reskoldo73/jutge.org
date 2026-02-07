@@ -1,16 +1,23 @@
 /*
-The statement of this problem is similar to that of problem ‍. But here, the n weights do not need to be 20, 21, …, 2n−1.
+The statement of this problem is similar to that of problem ‍. But here, the n
+weights do not need to be 20, 21, …, 2n−1.
 
-I.e., the problem is: Given n weights, we have to place all the weights on a balance, one after another, in such a way that the right pan is never heavier than the left pan. Please compute the number of ways of doing this.
+I.e., the problem is: Given n weights, we have to place all the weights on a
+balance, one after another, in such a way that the right pan is never heavier
+than the left pan. Please compute the number of ways of doing this.
 
 Input
 
-Input consists of several cases, each with the number of weights n followed by n different weights, all between 1 and 106. Assume 1 ≤ n ≤ 8.
+Input consists of several cases, each with the number of weights n followed by n
+different weights, all between 1 and 106. Assume 1 ≤ n ≤ 8.
 
 Output
 
-For every case, print the number of correct ways of placing the weights on the balance. This number will never be larger than 107.
+For every case, print the number of correct ways of placing the weights on the
+balance. This number will never be larger than 107.
 */
+
+//reskoldo73, 2025-09-22
 
 #include <iostream>
 #include <vector>

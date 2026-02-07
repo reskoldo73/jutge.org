@@ -1,17 +1,25 @@
 /*
-Find all the paths that a tortoise can travel from an initial position to a final position. The ground has n × m paving stones, each one with a letter painted on it. The tortoise can only make horizontal and vertical movements, and it cannot pass by the same position twice.
+Find all the paths that a tortoise can travel from an initial position to a
+final position. The ground has n × m paving stones, each one with a letter
+painted on it. The tortoise can only make horizontal and vertical movements, and
+it cannot pass by the same position twice.
 
 Input
 
-Input begins with n and m, followed by n lines with m letters each. Follow a pair of natural numbers indicating the initial row and column, and a pair of naturals numbers indicating the final row and column. The upper-left corner corresponds to the position (0, 0).
+Input begins with n and m, followed by n lines with m letters each. Follow a
+pair of natural numbers indicating the initial row and column, and a pair of
+naturals numbers indicating the final row and column. The upper-left corner
+corresponds to the position (0, 0).
 
 Output
 
 Print all the paths from the initial position to the final position.
 
-Information about the checker
-You can print the solutions to this exercise in any order.
+Information about the checker You can print the solutions to this exercise in
+any order.
 */
+
+//reskoldo73, 2025-09-22
 
 #include <iostream>
 #include <vector>

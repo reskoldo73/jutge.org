@@ -1,14 +1,21 @@
 /*
-Let’s play numerology. Write a program such that, given two numbers n and m, prints all the ways to insert ‘+’ signs into m so that the sum is n.
+Let’s play numerology. Write a program such that, given two numbers n and m,
+prints all the ways to insert ‘+’ signs into m so that the sum is n.
 
 Input
 
-Input consists of several cases. Every case has two strictly positive natural numbers n and ‍m, each not larger than 1012. Assume that the leftmost digit of n and of m is never zero.
+Input consists of several cases. Every case has two strictly positive natural
+numbers n and ‍m, each not larger than 1012. Assume that the leftmost digit of n
+and of m is never zero.
 
 Output
 
-For every case, print all the ways to get n by adding the digits of m as explained above. The solutions must appear in lexicographical order. If no solution exists, state so.
+For every case, print all the ways to get n by adding the digits of m as
+explained above. The solutions must appear in lexicographical order. If no
+solution exists, state so.
 */
+
+//reskoldo73, 2025-09-19
 
 #include <iostream>
 #include <vector>

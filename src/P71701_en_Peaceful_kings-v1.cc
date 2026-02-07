@@ -1,5 +1,7 @@
 /*
-Write a program that prints all the ways to place k kings on a n × n board so that no king threatens another king. Remember that a king threatens all the surrounding cells, either horizontally, vertically, or diagonally.
+Write a program that prints all the ways to place k kings on a n × n board so
+that no king threatens another king. Remember that a king threatens all the
+surrounding cells, either horizontally, vertically, or diagonally.
 
 Input
 
@@ -7,15 +9,19 @@ Input consists of two natural numbers n > 0 and 0 ≤ k ≤ n2.
 
 Output
 
-Print all the ways to place k kings on a n × n board so that no king threatens another king. Mark the kings with a ‘K’, and the empty cells with a dot. Print a line with ten hyphens after every board.
+Print all the ways to place k kings on a n × n board so that no king threatens
+another king. Mark the kings with a ‘K’, and the empty cells with a dot. Print a
+line with ten hyphens after every board.
 
-Information about the checker
-You can print the solutions to this exercise in any order.
+Information about the checker You can print the solutions to this exercise in
+any order.
 
 Observation
 
 The test cases of this problem do not require a very clever algorithm.
 */
+
+//reskoldo73, 2025-09-19
 
 #include <iostream>
 #include <vector>

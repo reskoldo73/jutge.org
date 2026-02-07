@@ -1,5 +1,6 @@
 /*
-Write a program to print the lexicographically smallest way to place n queens on an n × n chessboard so that no queen threatens another queen.
+Write a program to print all the ways to place n queens on an n × n chessboard
+so that no queen threatens another queen.
 
 Input
 
@@ -7,8 +8,15 @@ Input consists of a natural number n > 0.
 
 Output
 
-Mark the queens with a ‘Q’, and the empty positions with a dot. Print the lexicographically smallest way (by rows, from top to bottom, and assuming that a ‘Q’ is smaller than a dot) to place n queens on an n × n chessboard so that no queen threatens another queen. If there is no solution, print “NO SOLUTION”.
+Print all the ways to put n queens on an n × n chessboard so that no queen
+threatens another queen. The queens must be marked with a ‘Q’, and the empty
+positions with a dot. Print an empty line after each board.
+
+Information about the checker You can print the solutions to this exercise in
+any order.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>
@@ -30,14 +38,12 @@ void print() {
         }
         cout << "\n";
     }
+    cout << "\n";
 }
 
 
-bool solve(int pos) {
-    if(pos == n) {
-        print();
-        return true;
-    }
+void solve(int pos) {
+    if(pos == n) return print();
     for(int i = 0; i < n; ++i) {
         if(cols[i]) {
             int d1 = pos + i;
@@ -45,12 +51,11 @@ bool solve(int pos) {
             if(diag1[d1] and diag2[d2]) {
                 cols[i] = diag1[d1] = diag2[d2] = false;
                 queens[pos] = i;
-                if(solve(pos+1)) return true;
+                solve(pos+1);
                 cols[i] = diag1[d1] = diag2[d2] = true;
             }
         }
     }
-    return false;
 }
 
 int main () {
@@ -59,5 +64,5 @@ int main () {
     queens = vi(n);
     diag1 = diag2 = vb(2*n-1, true);
     cols = vb(n, true);
-    if(not solve(0)) cout << "NO SOLUTION\n";
+    solve(0);
 }

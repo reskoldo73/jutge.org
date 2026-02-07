@@ -1,5 +1,7 @@
 /*
-Write a program to compute the number of ways to place n queens on an n × n chessboard so that no queen threatens another queen. That is, no two queens can be located on the same row, column or diagonal.
+Write a program to compute the number of ways to place n queens on an n × n
+chessboard so that no queen threatens another queen. That is, no two queens can
+be located on the same row, column or diagonal.
 
 Input
 
@@ -7,8 +9,11 @@ Input consists of a natural number n > 0.
 
 Output
 
-Print the number of ways to put n queens on an n × n chessboard so that no queen threatens another queen.
+Print the number of ways to put n queens on an n × n chessboard so that no queen
+threatens another queen.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>

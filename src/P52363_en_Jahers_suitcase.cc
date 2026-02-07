@@ -1,16 +1,28 @@
 /*
-Jaher is a brilliant algorithmist, but he is also a bit absent minded. For example, he has some difficulties making things fit into his suitcase. Can you help him?
+Jaher is a brilliant algorithmist, but he is also a bit absent minded. For
+example, he has some difficulties making things fit into his suitcase. Can you
+help him?
 
-For simplicity, let us assume a two-dimensional suitcase a × b, where n ‍rectangular objects must fit. Objects can be placed at any position within the suitcase, without overlap, but they can not be rotated. In how many ways can we put the objects?
+For simplicity, let us assume a two-dimensional suitcase a × b, where
+n ‍rectangular objects must fit. Objects can be placed at any position within
+the suitcase, without overlap, but they can not be rotated. In how many ways can
+we put the objects?
 
 Input
 
-Input consists of several cases. Each case begins with a, b and n. Follow n pairs of strictly positive natural numbers, which indicate the sizes of the objects. The area of the objects exactly covers the suitcase, and there is always at least one possible solution. (The first case in the sample input corresponds to the picture.)
+Input consists of several cases. Each case begins with a, b and n. Follow n
+pairs of strictly positive natural numbers, which indicate the sizes of the
+objects. The area of the objects exactly covers the suitcase, and there is
+always at least one possible solution. (The first case in the sample input
+corresponds to the picture.)
 
 Output
 
-For every suitcase, print a line with its number and how many possible solutions exist.
+For every suitcase, print a line with its number and how many possible solutions
+exist.
 */
+
+//reskoldo73, 2025-09-21
 
 #include <iostream>
 #include <vector>

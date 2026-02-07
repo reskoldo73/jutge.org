@@ -44,7 +44,7 @@
 - [P74548 - Sebastian's toy-friends]
 - [P50084 - Numerology]
 
----
+--- 
 
 ## Dynamic programming (1)
 - [P21926 - Fibonacci numbers (1)]

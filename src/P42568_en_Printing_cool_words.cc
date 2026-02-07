@@ -1,17 +1,25 @@
 /*
-In this problem, we say that a word is cool if it does not have two consecutive consonants. Write a program to print all the cool words with n lowercase letters, v of which are vowels, that can be made up from the x first letters of the alphabet.
+In this problem, we say that a word is cool if it does not have two consecutive
+consonants. Write a program to print all the cool words with n lowercase
+letters, v of which are vowels, that can be made up from the x first letters of
+the alphabet.
 
 For instance, these are some of the many cool words for n = 5, v = 3 and x = 5:
 
 aabab ⁠ ⁠ababa ⁠ ⁠babaa ⁠ ⁠cecea ⁠ ⁠deeac
+
 Input
 
 Input consists of three natural numbers n > 0, 0 ≤ v ≤ n, and 2 ≤ x ≤ 26.
 
 Output
 
-Print, in alphabetic order, all the cool words with n lowercase letters, v of which are vowels, that can be made up from the x first lowercase letters. Assume that ‘y’ is a consonant.
+Print, in alphabetic order, all the cool words with n lowercase letters, v of
+which are vowels, that can be made up from the x first lowercase letters. Assume
+that ‘y’ is a consonant.
 */
+
+//2025-09-18
 
 #include <iostream>
 #include <vector>

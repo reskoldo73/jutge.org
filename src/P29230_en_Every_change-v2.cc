@@ -1,5 +1,7 @@
 /*
-Write a program such that, for every given natural number n, prints all the different ways to obtain n cents with the euro system of coins (1 cent, 2 cents, 5 cents, 10 cents, 20 cents, and 50 cents).
+Write a program such that, for every given natural number n, prints all the
+different ways to obtain n cents with the euro system of coins (1 cent, 2 cents,
+5 cents, 10 cents, 20 cents, and 50 cents).
 
 Input
 
@@ -7,12 +9,18 @@ Input consists of a sequence of natural numbers 1 ≤ n ≤ 50.
 
 Output
 
-For every n, print all the ways to obtain n cents, each one in a different line. The numbers of each line must appear in nonincreasing order. The solutions for every n must appear in reverse lexicographical order. Print an empty line after the output for each case.
+For every n, print all the ways to obtain n cents, each one in a different line.
+The numbers of each line must appear in nonincreasing order. The solutions for
+every n must appear in reverse lexicographical order. Print an empty line after
+the output for each case.
 
 Observation
 
-A simple backtracking program that computes the result for every given n (even if repeated) is fast enough for this problem.
+A simple backtracking program that computes the result for every given n (even
+if repeated) is fast enough for this problem.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>

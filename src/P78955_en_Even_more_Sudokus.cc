@@ -3,7 +3,11 @@ Write a program to find the unique solution of a Sudoku.
 
 Input
 
-Input begins with a number n, followed by n Sudokus. Every Sudoku consists of 81 numbers between zero and nine, plus the characters shown in the examples. A zero indicates an unknown value. Except for zeros, there are no repeated numbers in any row, nor in any column, nor in any of the nine squares 3 × 3. Every Sudoku has exactly one solution.
+Input begins with a number n, followed by n Sudokus. Every Sudoku consists of 81
+numbers between zero and nine, plus the characters shown in the examples. A zero
+indicates an unknown value. Except for zeros, there are no repeated numbers in
+any row, nor in any column, nor in any of the nine squares 3 × 3. Every Sudoku
+has exactly one solution.
 
 Output
 
@@ -11,8 +15,13 @@ For every Sudoku, print its unique solution, followed by an empty line.
 
 Observation
 
-A backtracking program that simply fills the rows from top to bottom and from left to right should not be fast enough to solve this exercise. Instead, at every step of the backtracking, fill the empty cell (or one of the empty cells) with less options left.
+A backtracking program that simply fills the rows from top to bottom and from
+left to right should not be fast enough to solve this exercise. Instead, at
+every step of the backtracking, fill the empty cell (or one of the empty cells)
+with less options left.
 */
+
+//reskoldo73, 2025-09-21
 
 #include <iostream>
 #include <vector>

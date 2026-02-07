@@ -1,18 +1,26 @@
 /*
-Write a program to find all the possible solutions of a Sudoku.
+Sudoku is a phenomenon all over the world. This addictive logic game, originated in the
+U.K. and popularized in Japan, has spread across the globe. The puzzles are now syndicated
+daily in newspapers in Australia, Germany, Scandinavia, …even Mireia is addicted to it!
+The rules are easy: You are given a 9 × 9 grid with some numbers in it, and you should fill
+in the grid so that every row, every column and every 3 × 3 box contains the numbers from
+1 to 9. For instance, the puzzle on the left has as unique solution the grid on the right:
+
+Write a program to solve Sudoku puzzles. Your program will be tested against Sudokus that
+have appeared in some newspapers. These are guaranteed to have a unique solution.
 
 Input
-
-Input begins with a number n, followed by n Sudokus. Every Sudoku consists of 81 numbers between zero and nine, plus the characters shown in the examples. A zero indicates an unknown value. Except for zeros, there are no repeated numbers in any row, nor in any column, nor in any of the nine 3 × 3 squares.
+Input begins with a line with a number 𝑛 ≥ 1. Follow 𝑛 Sudokus, each one consisting of nine
+lines, each one with nine space-separated characters, which are digits from 1 to 9 and dots.
+The latter indicate cells that are still empty. There is a blank line before every puzzle.
 
 Output
-
-For every Sudoku, print all the possible solutions in lexicographical order, each one followed by an empty line. Print “no solution” if there is no solution. Print a line with 30 asterisks after the output for every Sudoku.
-
-Observation
-
-The data tests are chosen so that a backtracking program that simply fills the rows from top to bottom and from left to right will be fast enough.
+Print the solutions using the same format as in the input: First, print 𝑛 on a line. For each
+puzzle, print nine lines, each with nine digits separated by spaces. Print a blank line before
+every solution.
 */
+
+//reskoldo73, 2025-09-15
 
 #include <iostream>
 #include <vector>
@@ -46,18 +54,17 @@ void fix(int x, int y, int z, bool b) {
 }
 
 void print() {
+    cout << "\n";
     for(int i = 0; i < 9; ++i) {
-        if(i == 3 or i == 6) cout << "------+-------+------\n";
         for(int j = 0; j < 9; ++j) {
-            if(j == 3 or j == 6) cout << " |";
             cout << (j ? " " : "") << board[i][j];
         }
         cout << "\n";
     }
-    cout << "\n";
 }
 
 void solve(int pos) {
+    if (solved) return;
     if(pos == 81){
         solved = true;
         return print();
@@ -83,14 +90,8 @@ void read() {
     mini = square(3, line(3, vb(10, true)));
     rows = cols = line(9, vb(10, true));
     for(int i = 0; i < 9; ++i) {
-        if(i == 3 or i == 6) {
-            string trash;
-            cin >> trash;
-        }        
         for(int j = 0; j < 9; ++j) {
             char aux;
-            if(j == 3 or j == 6) cin >> aux;
-
             cin >> aux;
             int temp = chartoint(aux);
             board[i][j] = temp;
@@ -99,12 +100,10 @@ void read() {
     }
     solved = false;
     solve(0);
-    if(not solved) cout << "no solution\n";
-    for(int i = 0; i < 30; ++i) cout << '*';
-    cout << "\n";
 }
 
 int main () {
     cin >> n;
+    cout << n << "\n";
     while(n--) read();
 }
