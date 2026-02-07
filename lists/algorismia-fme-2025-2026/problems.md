@@ -1,18 +1,18 @@
 # Algorismia, FME, 2025-2026
 
 ## Backtracking - Subsets
-- [P12828 - Zeros and ones (1)]
-- [P45965 - Zeros and ones (2)]
-- [P18957 - Subsets (1)]
-- [P33748 - Subsets (2)]
-- [P70756 - Partitions]
-- [P63227 - Multisets (1)]
-- [P70914 - Multisets (2)]
-- [P22110 - Multisets (3)]
-- [P14098 - Multisets (4)]
-- [P40685 - Equal sums (1)]
-- [P82660 - Equal sums (2)]
-- [P11655 - Equal sums (3)]
+- [P12828 - Zeros and ones (1)](../../src/P12828_en_Zeros_and_ones_1.cc)
+- [P45965 - Zeros and ones (2)](../../src/P45965_en_Zeros_and_ones_2.cc)
+- [P18957 - Subsets (1)](../../src/P18957_en_Subsets_1.cc)
+- [P33748 - Subsets (2)](../../src/P33748_en_Subsets_2-v2.cc)
+- [P70756 - Partitions](../../src/P70756_en_Partitions.cc)
+- [P63227 - Multisets (1)](../../src/P63227_en_Multisets_1.cc)
+- [P70914 - Multisets (2)](../../src/P70914_en_Multisets_2.cc)
+- [P22110 - Multisets (3)](../../src/P22110_en_Multisets_3.cc)
+- [P14098 - Multisets (4)](../../src/P14098_en_Multisets_4-v3.cc)
+- [P40685 - Equal sums (1)](../../src/P40685_en_Equal_sums_1.cc)
+- [P82660 - Equal sums (2)](../../src/P82660_en_Equal_sums_2.cc)
+- [P11655 - Equal sums (3)](../../src/P11655_en_Equal-sums_3-v5.cc)
 
 ---
 
