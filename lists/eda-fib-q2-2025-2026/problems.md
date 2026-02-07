@@ -79,17 +79,17 @@
 ## Exhaustive Search
 
 ### Bàsics
-- [P24674 - Permutations of words]
-- [P11655 - Equal sums (3)]
+- [P24674 - Permutations of words](../../src/P24674_en_Permutations_of_words.cc)
+- [P11655 - Equal sums (3)](../../src/P11655_en_Equal-sums_3-v5.cc)
 - [P98089 - Interpersonal dislikes]
-- [P33748 - Subsets (2)]
+- [P33748 - Subsets (2)](../../src/P33748_en_Subsets_2-v1.cc)
 
 ### Obligatoris
-- [P70756 - Partitions]
-- [P49889 - Consonants and vowels]
-- [P37197 - Incompatible species]
+- [P70756 - Partitions](../../src/P70756_en_Partitions.cc)
+- [P49889 - Consonants and vowels](../../src/P49889_en_Consonants_and_vowels.cc)
+- [P37197 - Incompatible species](../../src/P37197_en_Incompatible_species.cc)
 - [X92609 - Two coins of each kind (3)]
-- [P76807 - Sudoku]
+- [P76807 - Sudoku](../../src/P76807_en_Sudoku-v2.cc)
 - [P46547 - Digits in optimal order]
 - [P39621 - Cavalls voraços]
 
@@ -98,9 +98,9 @@
 - [P46634 - Maximum cost of a path (1)]
 - [P62113 - Two coins of each kind (1)]
 - [P83364 - Numbers with no forbidden prefixes]
-- [P16415 - Queens (1)]
-- [P17921 - Queens (2)]
-- [P38211 - Queens (3)]
+- [P16415 - Queens (1)](../../src/P16415_en_Queens_1-v2.cc)
+- [P17921 - Queens (2)](../../src/P17921_en_Queens_2-v2.cc)
+- [P38211 - Queens (3)](../../src/P38211_en_Queens_3-v2.cc)
 
 ---
 
