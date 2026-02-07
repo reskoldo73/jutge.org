@@ -1,5 +1,5 @@
 /*
-For every given natural number n, compute Fn mod108 + 7.
+For every given natural number n, compute Fn mod10^8 + 7.
 
 Input
 
@@ -7,8 +7,10 @@ Input consists of several n. Assume 0 ≤ n ≤ 105.
 
 Output
 
-For every given n, print Fn mod108 + 7.
+For every given n, print Fn mod10^8 + 7.
 */
+
+//reskoldo73, 2025-09-23
 
 #include <iostream>
 #include <vector>

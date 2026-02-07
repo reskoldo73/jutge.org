@@ -1,6 +1,7 @@
 /*
-You are playing a card game with a friend. For this game only the suit of the cards matters. The four suits are clubs, diamonds, hearts and spades, with the following values:
-
+You are playing a card game with a friend. For this game only the suit of the
+cards matters. The four suits are clubs, diamonds, hearts and spades, with the
+following values:
 ||
 Suit	    Symbol	Value
 Clubs	    ♣	    1
@@ -8,16 +9,21 @@ Diamonds	♦	    5
 Hearts	    ♥	    8
 Spades	    ♠	    14
 ||
-Your friend selects a number n, and you must show cards whose total value equals n, by using the minimum possible number of cards. Assume that you have an unlimited number of cards of each suit.
+Your friend selects a number n, and you must show cards whose total value equals
+n, by using the minimum possible number of cards. Assume that you have an
+unlimited number of cards of each suit.
 
 Input
 
-Input consists of several cases, each one with a natural number n between 0 and 500000. Input ends with a −1.
+Input consists of several cases, each one with a natural number n between 0 and
+500000. Input ends with a −1.
 
 Output
 
 For every n, print the corresponding result.
 */
+
+//reskoldo73, 2025-10-12
 
 #include <iostream>
 #include <vector>

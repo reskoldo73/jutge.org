@@ -1,18 +1,26 @@
 /*
-Some problems are so classic that barely need a statement. For this one, we ask you to compute the longest subword that two given words have in common. In case of a tie, print the smallest one in alphabetical order.
+Some problems are so classic that barely need a statement. For this one, we ask
+you to compute the longest subword that two given words have in common. In case
+of a tie, print the smallest one in alphabetical order.
 
 Input
 
-Input consists of several cases, each with two non-empty words w1 and w2 made up of at most 500 lowercase letters.
+Input consists of several cases, each with two non-empty words w1 and w2 made up
+of at most 500 lowercase letters.
 
 Output
 
-For every case, print the longest common subword. In case of a tie, print the smallest one in alphabetical order.
+For every case, print the longest common subword. In case of a tie, print the
+smallest one in alphabetical order.
 
 Observation
 
-There are very fast algorithms to solve this problem. Here, we settle for one that takes time proportional to n1· n2, where n1 and n2 are the lengths of w1 and w2.
+There are very fast algorithms to solve this problem. Here, we settle for one
+that takes time proportional to n1· n2, where n1 and n2 are the lengths of w1
+and w2.
 */
+
+//reskoldo73, 2025-10-07
 
 #include <iostream>
 #include <vector>

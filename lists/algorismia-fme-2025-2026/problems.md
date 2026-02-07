@@ -47,27 +47,27 @@
 --- 
 
 ## Dynamic programming (1)
-- [P21926 - Fibonacci numbers (1)]
-- [P93625 - Binomial coefficients]
-- [P74421 - Christmas gift]
-- [P88567 - Adding subrectangles]
-- [P79936 - Robotic bullfighting]
-- [P81826 - Some sequences of bits (1)]
-- [P34343 - Some sequences of bits (2)]
-- [P59506 - Some sequences of bits (3)]
-- [P82409 - Writing parentheses]
-- [P68813 - Correct expressions]
-- [P96556 - Increasing subsequences]
-- [P95498 - Common scores]
-- [P52289 - The one of the greatest common subword]
-- [P54504 - Card game]
-- [P88921 - Scape from the maze]
-- [P37276 - Mariano and Luisito]
-- [P26005 - The one of the edition distance (I)]
-- [P48188 - The one of the edition distance (II)]
-- [P98345 - The Dislex-Wonga test]
+- [P21926 - Fibonacci numbers (1)](../../src/P21926_en_Fibonacci_numbers_1.cc)
+- [P93625 - Binomial coefficients](../../src/P93625_en_Binomial_coefficients.cc)
+- [P74421 - Christmas gift](../../src/P74421_en_Christmas_gift.cc)
+- [P88567 - Adding subrectangles](../../src/P88567_en_Adding_subrectangles.cc)
+- [P79936 - Robotic bullfighting](../../src/P79936_en_Robotic_bullfighting.cc)
+- [P81826 - Some sequences of bits (1)](../../src/P81826_en_Some_sequences_of_bits_1.cc)
+- [P34343 - Some sequences of bits (2)](../../src/P34343_en_Some_sequences_of_bits_2.cc)
+- [P59506 - Some sequences of bits (3)](../../src/P59506_en_Some_sequences_of_bits_3.cc)
+- [P82409 - Writing parentheses](../../src/P82409_en_Writing_parenthesis.cc)
+- [P68813 - Correct expressions](../../src/P68813_en_Correct_expressions.cc)
+- [P96556 - Increasing subsequences](../../src/P96556_en_Increasing_subsequences.cc)
+- [P95498 - Common scores](../../src/P95498_en_Common_scores.cc)
+- [P52289 - The one of the greatest common subword](../../src/P52289_en_The_one_of_the_greatest_common_subword-v2.cc)
+- [P54504 - Card game](../../src/P54504_en_Card_game.cc)
+- [P88921 - Escape from the maze](../../src/P88921_en_Escape_from_the_maze-v2.cc)
+- [P37276 - Mariano and Luisito](../../src/P37276_en_Mariano_and_Luisito.cc)
+- [P26005 - The one of the edition distance (I)](../../src/P26005_en_The_one_of_the_edition_distance_I.cc)
+- [P48188 - The one of the edition distance (II)](../../src/P48188_en_The_one_of_the_edition_distance_II.cc)
+- [P98345 - The Dislex-Wonga test](../../src/P98345_en_%20The_DislexWonga_test.cc)
 - [P87919 - The one of the coins]
-- [P22494 - Nice partition]
+- [P22494 - Nice partition](../../src/P2249_en_Nice_partition.cc)
 - [P16100 - Omgillas]
 - [P56272 - Chained pawns]
 - [P75142 - Bags and boxes]
@@ -113,18 +113,18 @@
 - [P13994 - Weighted shortest path (2)]
 - [P25235 - Weighted shortest path (3)]
 - [P39586 - Weighted shortest path (4)]
-- [P12887 - Minimum spanning trees]
-- [P36054 - Minimizing the cost of a graph]
+- [P12887 - Minimum spanning trees] TODO
+- [P36054 - Minimizing the cost of a graph] TODO
 - [P53547 - Tiny bishops]
-- [P98259 - Searching for the telecos]
-- [P21551 - Much more efficiently, please!]
+- [P98259 - Searching for the telecos] TODO
+- [P21551 - Much more efficiently, please!] TODO
 - [P55713 - Global firefighters]
 - [P22662 - Friend numbers]
 - [P57656 - Subgraph isomorphism]
-- [P48762 - Saturday Night Fever]
+- [P48762 - Saturday Night Fever] TODO
 - [P31675 - The cask of amontillado]
 - [P93727 - Old pals]
-- [P22716 - Stuck on videogames]
+- [P22716 - Stuck on videogames] TODO
 - [P89193 - The National Geological Survey]
 - [P77839 - Old teletext]
 

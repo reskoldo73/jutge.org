@@ -10,6 +10,8 @@ Output
 For every given pair, print Fn modm.
 */
 
+//reskoldo73, 2025-09-28
+
 #include <iostream>
 #include <vector>
 

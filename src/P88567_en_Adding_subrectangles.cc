@@ -1,18 +1,26 @@
 /*
-Given a grid with uppercase letters, compute the sum of the values of the letters in each rectangle with a corner in the upper-left extreme. The values of the letters are ’A’=1, ’B’=1+2=3, ’C’=1+2+3=6, ’D’=1+2+3+4=10, etcetera, up to ’Z’=351.
+Given a grid with uppercase letters, compute the sum of the values of the
+letters in each rectangle with a corner in the upper-left extreme. The values of
+the letters are ’A’=1, ’B’=1+2=3, ’C’=1+2+3=6, ’D’=1+2+3+4=10, etcetera, up to
+’Z’=351.
 
 Input
 
-Input consists of 0< r≤ 500 lines, all of them with the same number of uppercase letters 0<c≤ 500.
+Input consists of 0< r≤ 500 lines, all of them with the same number of uppercase
+letters 0<c≤ 500.
 
 Output
 
-Print r lines with c numbers each. The j-th number of the i-th row must be the sum of the values of the letters of the rectangle whose corners are the first letter of the input, and the j-th letter of the i-th row.
+Print r lines with c numbers each. The j-th number of the i-th row must be the
+sum of the values of the letters of the rectangle whose corners are the first
+letter of the input, and the j-th letter of the i-th row.
 
 Hint
 
 Consider using the inclusion-exclusion principle.
 */
+
+//reskoldo73, 2025-09-28
 
 #include <iostream>
 #include <vector>

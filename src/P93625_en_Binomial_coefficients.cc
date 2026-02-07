@@ -7,7 +7,10 @@ For each case, print (
 n
 k
 ).
+(n choose k)
 */
+
+//reskoldo73, 2025-09-23
 
 #include <iostream>
 #include <vector>

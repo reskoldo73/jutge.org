@@ -1,10 +1,11 @@
 /*
-Write a program that prints the number of sequences of length n made up of only zeros and ones that do not contain two consecutive zeros nor three consecutive ones.
+Write a program that prints the number of sequences of length n made up of only
+zeros and ones that do not contain two consecutive zeros nor three consecutive
+ones.
 
 For instance, there are 7 sequences for n = 5:
 
-01010   01011   01101   10101   10110   11010   11011
-Input
+01010   01011   01101   10101   10110   11010   11011 Input
 
 Input consists of several natural numbers n, each between 0 and 150.
 
@@ -12,6 +13,8 @@ Output
 
 For every n, print the required number.
 */
+
+//reskoldo73, 2025-10-02
 
 #include <iostream>
 #include <vector>
