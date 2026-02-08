@@ -107,16 +107,16 @@
 ## Exam problems
 
 - [P39846 - Treasures in a map (4)]
-- [P71701 - Peaceful kings]
+- [P71701 - Peaceful kings](../../src/P71701_en_Peaceful_kings-v1.cc)
 - [P84415 - Bag of words]
-- [P22295 - The travelling tortoise]
+- [P22295 - The travelling tortoise](../../src/P22295_en_The_travelling_tortoise.cc)
 - [P69865 - Picking up coins]
 - [P98123 - Filling the bag]
 - [P90766 - Treasures in a map (3)]
 - [P67329 - DNA]
 - [P47386 - Gossip]
 - [P87462 - Pac-man]
-- [P90861 - Queues of a supermarket (1)]
+- [P90861 - Queues of a supermarket (1)] TODO: bring from pro2
 - [P14952 - Topological sort]
 - [X07174 - Nombres sense prefixos prohibits]
 - [X34032 - El cavall afamat]
@@ -129,22 +129,22 @@
 - [P86108 - LOL]
 - [P27258 - Monstres en un mapa]
 - [P43164 - Treasures in a map (5)]
-- [P31389 - Rooks inside a rectangle]
+- [P31389 - Rooks inside a rectangle](../../src/P31389_en_Rooks_inside_a_rectangle.cc)
 - [P12887 - Minimum spanning trees]
 - [P54070 - Rightmost position of insertion]
-- [P76807 - Sudoku]
+- [P76807 - Sudoku](../../src/P76807_en_Sudoku-v2.cc)
 - [P99753 - Bi-increasing vector]
 - [P18679 - Balance beam (1)]
 - [P74219 - Fibonacci numbers (2)]
-- [P49889 - Consonants and vowels]
+- [P49889 - Consonants and vowels](../../src/P49889_en_Consonants_and_vowels.cc)
 - [P96413 - Erdős number (2)]
-- [P70756 - Partitions]
+- [P70756 - Partitions](../../src/P70756_en_Partitions.cc)
 - [P71496 - Cuts]
 - [P29033 - Two colors]
 - [X39049 - Powers of permutations]
 - [X82938 - Search in a unimodal vector]
 - [X81287 - Cheapest Routes]
-- [P11655 - Equal sums (3)]
+- [P11655 - Equal sums (3)](../../src/P11655_en_Equal-sums_3-v5.cc)
 - [X64801 - Is it cyclic?]
 - [P65553 - Boardgames]
 - [P98259 - Searching for the telecos]
@@ -177,9 +177,9 @@
 - [P83364 - Numbers with no forbidden prefixes]
 - [P71496 - Cuts]
 - [X54052 - Completant cadenes d'ADN]
-- [P29230 - Every change]
+- [P29230 - Every change](../../src/P29230_en_Every_change-v2.cc)
 - [V45017 - Balanced scales]
-- [P57638 - Experiment físic (1)]
+- [P57638 - Experiment físic (1)](../../src/P57638_ca_Experiment_fisic_1.cc)
 - [P25757 - Pintant components]
 - [S97190 - Jumps in pairs]
 - [Y16864 - Cliques]
