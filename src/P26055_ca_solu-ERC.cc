@@ -1,3 +1,5 @@
+//Solució exàmen donada per Enric Rodríguez Carbonell
+
 #include <iostream>
 #include <vector>
 #include <queue>

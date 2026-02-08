@@ -1,3 +1,5 @@
+//Solució exàmen donada per David Garcia Soriano
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

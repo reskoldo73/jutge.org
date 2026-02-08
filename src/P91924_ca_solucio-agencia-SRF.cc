@@ -1,3 +1,5 @@
+//Solució exàmen donada per Salvador Roura Ferret
+
 #include <iostream>
 #include <vector>
 #include <map>
