@@ -34,6 +34,7 @@ paraula lexicogràficament més petita. Si no n’hi ha cap, escriviu “no”.
 
 //reskoldo73, 2026-01-12 Examen Final Algorismia FME 2025-2026
 // 4/10 WA because I don't mark the visited nodes
+//UPDATE: fixed unmarked visited nodes and auxprint, now it gives AC, sorry for the ugly code
 
 #include <iostream>
 #include <vector>
@@ -61,16 +62,16 @@ void auxprint(int i) {
         output += char('0' + pare[i].second);
         i = pare[i].first;
     }
-    output += char('0' + pare[i].second);
-    cout << output << endl;
+    for (int j = output.size() - 1; j >= 0; --j) {
+        cout << output[j];
+    }
+    cout << endl;
 }
 
 void print(int i) {
     if(i > 0) {
-        // cout << i << endl;
-        // //auxprint(i);
-        // for(auto x : pare) cout << x.first << ' ' << x.second << endl;
-        cout << "yes" << endl;
+        auxprint(i);
+
     }
     else cout << "no" << endl;
 }
@@ -91,17 +92,14 @@ void bfs() {
             else if (vist[temp] == -1) {
                 pare[temp] = {v, i};
                 ans += char('0' + i);
-                q.push(temp);               
+                q.push(temp);
+                vist[temp] = 1;               
             }
         }            
     }
     print(-1);
 }
 
-// he trobat com saber si existeix o no, però no sé trobar la paraula concreta, 
-// auxprint entra en un bucle infinit per alguna raó
-
-//update: entra en un bucle infinit quan el fill de 1 és 1, però això no hauria de passar mai
 int main () {
     while(cin >> n) {
         graf = vvi(n, vi(2));
