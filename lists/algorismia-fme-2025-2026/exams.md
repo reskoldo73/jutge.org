@@ -332,7 +332,7 @@
 - [P72571 - Vídeojoc]
 
 ### Final
-- [P34165 - 3-SAT](../../src/P34165_ca_3SAT.cc) [P34165 - 3-SAT - Oficial](../../src/P34165_ca_3sat-DGS.cpp)
-- [P70058 - Pintant cases](../../src/P70058_ca_Pintant_cases.cc) [P70058 - Pintant cases - Oficial](../../src/P70058_ca_casas-DGS.cpp)
-- [P91924 - Agència de viatges](../../src/P91924_ca_Agencia_de_viatges.cc) [P91924 - Agència de viatges - Oficial](../../src/P91924_ca_solucio-agencia-SRF.cc)
-- [P26055 - Autòmats Finits](../../src/P26055_ca_Automats_finits.cc) [P26055 - Autòmats Finits - Oficial](../../src/P26055_ca_solu-ERC.cc)
+- [P34165 - 3-SAT](../../src/P34165_ca_3SAT.cc),    [P34165 - 3-SAT - Oficial](../../src/P34165_ca_3sat-DGS.cpp)
+- [P70058 - Pintant cases](../../src/P70058_ca_Pintant_cases.cc),   [P70058 - Pintant cases - Oficial](../../src/P70058_ca_casas-DGS.cpp)
+- [P91924 - Agència de viatges](../../src/P91924_ca_Agencia_de_viatges.cc), [P91924 - Agència de viatges - Oficial](../../src/P91924_ca_solucio-agencia-SRF.cc)
+- [P26055 - Autòmats Finits](../../src/P26055_ca_Automats_finits.cc),   [P26055 - Autòmats Finits - Oficial](../../src/P26055_ca_solu-ERC.cc)
