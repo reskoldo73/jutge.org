@@ -335,7 +335,7 @@
 - [P93364 - Segments consecutius de suma parella]
 
 ### Final
-- [P62332 - Horaris compatibles] [P62332 - Horaris compatibles - Oficial](../../src/P62332_ca_Horaris_compatibles-MF.py)
-- [P40148 - Rètols](../../src/P40148_ca_Retols.cc) [P40148 - Rètols - Oficial](../../src/P40148_ca_Retols-SRF.cc)
-- [P94354 - Expressions regulars](../../src/P94354_ca_Expressions_regulars.cc) [P94354 - Expressions regulars - Oficial](../../src/P94354_ca_Expressions_regulars-MB.cc)
-- [P53208 - Nombres simples](../../src/P53208_ca_Nombres_simples.cc) [P53208 - Nombres simples - Oficial](../../src/P53208_ca_Nombres_simples-SRF.cc)
+- [P62332 - Horaris compatibles],   [P62332 - Horaris compatibles - Oficial](../../src/P62332_ca_Horaris_compatibles-MF.py)
+- [P40148 - Rètols](../../src/P40148_ca_Retols.cc), [P40148 - Rètols - Oficial](../../src/P40148_ca_Retols-SRF.cc)
+- [P94354 - Expressions regulars](../../src/P94354_ca_Expressions_regulars.cc), [P94354 - Expressions regulars - Oficial](../../src/P94354_ca_Expressions_regulars-MB.cc)
+- [P53208 - Nombres simples](../../src/P53208_ca_Nombres_simples.cc),   [P53208 - Nombres simples - Oficial](../../src/P53208_ca_Nombres_simples-SRF.cc)
